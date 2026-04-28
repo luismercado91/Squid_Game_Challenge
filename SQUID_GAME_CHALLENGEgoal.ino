@@ -10,17 +10,19 @@ const int rolePerMinute = 17;        // Adjustable range of 28BYJ-48 stepper is 
 Stepper stepper(stepsPerRevolution, 47, 49, 51, 53);
 MPU6050 mpu;
 
+// Variables to store accelerometer readings and calculated angles
 float xAccel, yAccel, zAccel;
 float pitch, roll;
 
 
 void setup() 
 {
-  Serial.begin(115200);
+  Serial.begin(115200); // Start serial communication at 115200 baud rate
   Serial.println("Initialize MPU6050");
 
-  stepper.setSpeed(rolePerMinute * 20);
+  stepper.setSpeed(rolePerMinute * 20); // Set the speed of the stepper motor
 
+  // Try to initialize the MPU6050 sensor
   while(!mpu.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_2G))
   {
     Serial.println("Could not find a valid MPU6050 sensor, check wiring!");
