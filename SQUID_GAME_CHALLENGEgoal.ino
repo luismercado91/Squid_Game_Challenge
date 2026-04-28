@@ -6,7 +6,7 @@
 const int stepsPerRevolution = 2048; // change this to fit the number of steps per revolution
 const int rolePerMinute = 17;        // Adjustable range of 28BYJ-48 stepper is 0~17 rpm
 
-//set steps and the connection with the MPU
+//set steps and the connection with the MCU
 Stepper stepper(stepsPerRevolution, 47, 49, 51, 53);
 MPU6050 mpu;
 
