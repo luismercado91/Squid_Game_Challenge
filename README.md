@@ -1,4 +1,6 @@
 # Squid Game Challenge – Embedded Motion Control System
+<img width="785" height="354" alt="AdobeExpressPhotos_1a7e66570cfc48d2a3ec30a32bd483de_CopyEdited" src="https://github.com/user-attachments/assets/0276e5f3-c81d-4f25-93c8-550aa0a9a2b3" />
+
 
 ## Overview
 This project is an embedded system inspired by the "Red Light / Green Light" game from Squid Game. It uses real-time sensing, motion detection, and actuator control to monitor player movement and trigger responses.
